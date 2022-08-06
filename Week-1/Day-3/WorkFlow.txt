@@ -1,0 +1,28 @@
+Berikut ini workflow terkait pengolahan Machine Learning di Phase 1 ini.
+1. EDA Analysis (jangan menambah, menghapus, atau mengubah data)
+2. Splitting dataset (train-set, test-set, dan inference-set)
+3. Untuk X_train
+     Handling Outliers
+     Handling Missing Values
+     Feature Selection
+     Feature Scaling untuk column numeric
+     Feature Encoding untuk column category (encode juga y_train jika berbentuk category)
+4. Untuk X_test
+     Tidak ada Handling Outliers (kalaupun mau silakan)
+     Handling Missing Values (berdasarkan X_train)
+     Feature Scaling untuk column numeric (berdasarkan X_train)
+     Feature Encoding untuk column category (encode juga y_test jika berbentuk category)
+5. Modeling (masukkan X_train & y_train)
+6. Model Evaluation
+     Predict X_train dan y_train
+     Predict X_test dan y_test
+     Bandingkan akurasi antara train-set & test-set
+     Model Analysis  lakukan analisis terkait hasil, parameter, waktu pemrosesan, dll
+7. (OPTIONAL) Model Tuning
+     Cari hyperparameter dengan memakai Grid SearchRandom Search
+     Model Analysis  lakukan analisis terkait hasil, parameter, waktu pemrosesan, dll
+8. Model Inference
+     Gunakan berdasarkan inference-set
+     Lakukan preprocessing yang sama dengan poin 4
+     Predict inference-set
+9. Overall Analysis  berikan narasi terkait EDA Analysis dan Model Analysis yang sudah dibuat.

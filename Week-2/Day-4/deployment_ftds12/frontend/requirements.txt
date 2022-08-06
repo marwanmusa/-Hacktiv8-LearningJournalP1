@@ -1,0 +1,3 @@
+requests
+streamlit
+typing_extensions

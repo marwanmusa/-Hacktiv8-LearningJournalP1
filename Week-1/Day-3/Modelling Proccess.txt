@@ -1,0 +1,16 @@
+load data
+EDA
+FE & FS
+- pilih data untuk inference
+- train test split
+- handling missingvalue
+- handling outlier
+- scaling - numeric
+- encoding - kategotik
+- FS
+modelling
+evaluasi model
+- regresi : mae, r2, mse, mape, rmse
+- klasifikasi : classfication report (accuracy, precicy, recall, f1-score, aucroc score)
+- kesimpulan terkait model dan datanya
+inference

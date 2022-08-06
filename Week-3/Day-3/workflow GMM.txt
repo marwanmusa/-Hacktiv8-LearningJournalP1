@@ -1,0 +1,18 @@
+workflow
+1. Menentukan K cluster
+2. Generate ke 2 dist. normal
+
+to evaluate 
+1. Cari nilai AIC minimum
+2. Jika AIC memiliki nilai min yang sama, Lihat BIC
+3. Cari nilai BIC yang minimum
+
+PCA2x
+1. Reduksi Dimensi
+2. Untuk visualisasi (set n_components = 2)
+
+GMM sangat memperhatikan likelyhood nya // kemiripan data dari centroidnya
+
+Konvergen di GMM ketika nilai centroid setiap iter tidak berubah secara signifikan.
+
+

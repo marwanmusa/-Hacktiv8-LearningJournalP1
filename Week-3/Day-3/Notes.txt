@@ -1,0 +1,36 @@
+Catatan tambahan : 
+
+A. URL GitHub mas Fahmi - Dimensionality Reduction : https://github.com/fahmimnalfrzki/Additional-Materials/blob/main/Heart%20Failure%20Dimensionality%20Reduction%20Practice.ipynb
+
+B. URL GitHub mas Fahmi - Unsupervised Learning : https://github.com/fahmimnalfrzki/Additional-Materials/blob/main/Unsupervised%20Learning.ipynb
+
+C. Library PyOD : https://pyod.readthedocs.io/en/latest/
+
+D. Sedikit tambahan mengenai Unsupervised Learning dengan KMeans. Kurang lebih seperti ini flownya.
+
+1. Data Cleaning (Handling Outlier, Handling Missing Values, Feature Scaling, etc)
+
+2. Setelah dilakukan Feature Scaling, cek nilai Variance Inflation Factor (VIF). 
+        * Dari VIF, dapat diketahui sebaiknya akan direduksi hingga berapa dimensi ketika melakukan PCA.
+        * Misal, kita punya 7 kolom.
+        * Nilai VIF menunjukkan bahwa dari 7 kolom tersebut, ada 4 kolom yang nilainya dibawah 5 dan 3 kolom yang nilainya diatas 5.
+        * Berdasarkan VIF, dapat diketahui bahwa dari 7 kolom dapat direduksi hingga 5 kolom. Ini hanya bayangan saja bukan sesuatu yang pasti.
+        * Hal ini harus dibuktikan dengan mengecek Cummulative EVR. Cek grafiknya.
+        * Tentukan berapa persen informasi yang akan dibawa dalam hasil reduksi dimensi. 
+        * Narasikan step 2 ini secara keseluruhan.
+
+3. Lakukan PCA. 
+        * Misal kita akan memakai 80 %, maka set parameter n_components=0.8 di PCA-nya.
+        * Seharusnya, jumlah kolom hasil reduksi PCA sama dengan jumlah kolom yang kita perkirakan terbentuk berdasarkan grafik Cummulative EVR.
+
+4. Clustering dengan KMeans dimana datanya adalah hasil PCA.
+
+5. Cek elbow method dan silhoutte score untuk menentukan berapa cluster yang tepat.
+
+6. Narasikan cluster yang pas untuk data ini.
+
+8. Buat PCA lagi dimana param n_components=2. 
+        * Hal ini dimaksudkan untuk melihat visualisasi hasil cluster dalam ruang dua dimensi. 
+        * PCA ini berbeda dengan PCA yang diawal dimana PCA yang diawal digunakan untuk modeling.
+
+9. Lakukan EDA pada setiap hasil cluster yang terbentuk.
